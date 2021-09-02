@@ -12,7 +12,6 @@ outputs:
 runs:
   using: "composite"
   steps:
-    - uses: actions/checkout@v2
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
     - id: random-number-generator
